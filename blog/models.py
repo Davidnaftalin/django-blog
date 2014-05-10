@@ -7,9 +7,9 @@ from django.contrib.auth.models import User
 
 class Blog(models.Model):
     title = models.CharField(max_length=99, blank=True, null=True)
-    content = model.TextField()
-    created = models.DateTimeField(auto_now_add=True)
-    author = models.ForeignKey(User, unique=True)
+    content = models.TextField()
+    created = models.DateTimeField(default=timezone.now)
+    author = models.ForeignKey(User, blank=True, null=True)
 
     def __unicode__(self):
-        return '{} - {} - {}'.format(self.title, self.author, self.created)
+        return '{}, {} | python{}'.format(self.title, self.author, self.created)

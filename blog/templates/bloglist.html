@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block bloglist %}
+
+{% for blog in object_list %}
+    {{ blog.title }} {{ blog.author }} {{ blog.created }}
+    {{ blog.content }}
+{% endfor %}
+
+{% endblock %}
