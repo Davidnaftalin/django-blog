@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block bloglist %}
+<div class="all_content">
+        {% include 'sidebar.html' %}
+
+<div class="main_content">
+
+  <section class="container">
+    <div class="login">
+      <h1>Register</h1>
+      <form method="POST" action="">
+      {% csrf_token %}
+        <p>{{ form.username }}}</p>
+        <p>{{ form.password1 }}</p>
+        <p>{{ form.password2 }}</p>
+
+
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      </form>
+    </div>
+
+  </section>
+
+<div>
+<div>
+
+  {% endblock %}

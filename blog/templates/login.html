@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block bloglist %}
+
+<div class="all_content">
+        {% include 'sidebar.html' %}
+
+<div class="main_content">
+
+<p class='login_error'> {{ form.non_field_errors.as_ul }} HELLO WORLD</p>
+<section class="container">
+    <div class="login">
+      <h1>Login</h1>
+      <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
+        {% csrf_token %}
+        <p> {{ form.username }}<p>
+        <p>{{ form.password }}</p>
+        <p class="submit">
+          <input type="submit" value="Login" />
+          <input type="hidden" name="next" value="{{ next }}"/>
+        </p>
+
+      </form>
+    </div>
+  </section>
+
+<div>
+<div>
+
+{% endblock %}

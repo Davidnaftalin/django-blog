@@ -5,14 +5,10 @@
                 {% include 'sidebar.html' %}
 
         <div class="main_content">
-
-            {% for blog in object_list %}
                 <div class="choose">
-                    <h3><a href="{{ blog.id }}">{{ blog.title }} / {{ blog.author }} / {{ blog.created }}</a></h3>
+                    <h3>{{ blog.title }} / {{ blog.author }} / {{ blog.created }}</h3>
                     <h4>{{blog.content}} </h4>
                 </div>
-            {% endfor %}
-
         </div>
         </div>
 

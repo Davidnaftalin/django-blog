@@ -9,7 +9,10 @@ class Blog(models.Model):
     title = models.CharField(max_length=99, blank=True, null=True)
     content = models.TextField()
     created = models.DateTimeField(default=timezone.now)
-    author = models.ForeignKey(User, blank=True, null=True)
+    author = models.ForeignKey(User)
 
     def __unicode__(self):
-        return '{}, {} | python{}'.format(self.title, self.author, self.created)
+        return '{}, {} | {}'.format(self.title, self.author, self.created)
+
+
+

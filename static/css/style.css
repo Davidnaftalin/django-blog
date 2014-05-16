@@ -1,0 +1,325 @@
+/*html {
+    height: 100%;
+    min-width: 809px;
+    overflow-x: none;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 0;
+    overflow-x: scroll;
+    font-family: 'circularStd-Book', 'arial', sans-serif;
+    color: #222222;
+    overflow-x: none;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.top_header {
+    width: 100%;
+    height: 80px;
+    padding: 8px 0;
+    background-color: #4AB5AA;
+}
+
+.all_content {
+    position: relative;
+    height: -webkit-calc(100% - 96px);
+    height: -moz-calc(100% - 96px);
+    height: calc(100% - 96px);
+}
+
+.side_navigation {
+    width: 320px;
+    height: 100%;
+    background-color: #5A6967;
+    display: inline-block;
+    z-index: 100;
+    overflow-y: scroll;
+}
+
+.container_top {
+    height: 202px;
+    border-bottom: 2px solid white;
+}
+
+.container {
+    height: 100px;
+    border-bottom: 2px solid white;
+}
+
+.checkbox_div {
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon1 {
+    background-image: url(static/images/basic_key_icon.png);
+}
+
+.icon2 {
+    background-image: url(images/logos/logo_2.png);
+}
+
+.icon3 {
+    background-image: url(images/logos/logo_3.png);
+}
+
+.icon4 {
+    background-image: url(images/logos/logo_4b.png);
+}
+
+.icon5 {
+    background-image: url(images/logos/logo_5.png);
+}
+
+.icon6 {
+    background-image: url(images/logos/logo_6.png);
+}
+
+.icon7 {
+    background-image: url(images/logos/logo_7.png);
+}
+
+.main_content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: -webkit-calc(100% - 135px);
+    width: -moz-calc(100% - 135px);
+    width: calc(100% - 135px);
+    height: 100%;
+    background-color: white;
+    z-index: 150;
+    transition: transform .75s,width .75s;
+    -webkit-transition: -webkit-transform .75s,width .75s;
+}
+
+
+#side_navigation_hover {
+    transform: translate(0px,0);
+    -webkit-transform: translate(0px,0);
+    -o-transform: translate(0px,0);
+    -moz-transform: translate(0px,0);
+    width: -webkit-calc(100% - 320px);
+    width: -moz-calc(100% - 320px);
+    width: calc(100% - 320px);
+}
+
+#side_navigation_hover_2 {
+    transform: translate(0px,0);
+    -webkit-transform: translate(0px,0);
+    -o-transform: translate(0px,0);
+    -moz-transform: translate(0px,0);
+    width: -webkit-calc(100% - 1122px);
+    width: -moz-calc(100% - 1122px);
+    width: calc(100% - 1122px);
+}
+
+.choose {
+    width: 800px;
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: scroll;
+    position: relative;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.border_div {
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+
+.main_content h3 {
+    font-weight: normal;
+    font-size: 30px;
+    padding: 29px 0 0 0;
+    margin: 0 80px 0 80px;
+    line-height: 68px;
+    color: #5A6967;
+}
+
+.main_content h4 {
+    font-weight: normal;
+    font-size: 20px;
+    padding: none;
+    margin: 0 80px 0 80px;
+    line-height: 68px;
+    color: #5A6967;
+}
+
+.top_header h1 {
+    font-weight: normal;
+    font-size: 35px;
+    color: #5A6967;
+    padding: 10px 10px 10px 10px;
+    line-height: 68px;
+}
+
+LOGIN & REGISTRATION
+.container {
+  margin: 80px auto;
+  width: 640px;
+}
+
+.login {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border-radius: 3px;
+  @include box-shadow(0 0 200px rgba(white, .5), 0 1px 2px rgba(black, .3));
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -8px; right: -8px; bottom: -8px; left: -8px;
+    z-index: -1;
+    background: rgba(black, .08);
+    border-radius: 4px;
+  }
+
+  h1 {
+    margin: -20px -20px 21px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    text-shadow: 0 1px white;
+    background: #f3f3f3;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 3px 3px 0 0;
+    @include linear-gradient(top, whiteffd, #eef2f5);
+    @include box-shadow(0 1px #f5f5f5);
+  }
+
+  p { margin: 20px 0 0; }
+  p:first-child { margin-top: 0; }
+
+  input[type=text], input[type=password] { width: 278px; }
+
+  p.remember_me {
+    float: left;
+    line-height: 31px;
+
+    label {
+      font-size: 12px;
+      color: #777;
+      cursor: pointer;
+    }
+
+    input {
+      position: relative;
+      bottom: 1px;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+  }
+
+  p.submit { text-align: right; }
+}
+
+
+input {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 200px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px; // Can we get this on WebKit please?
+  @include box-shadow(inset 0 1px 3px rgba(black, .12));
+
+  &:focus {
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0; // WebKit sets this to -1 by default
+  }
+}
+
+input[type=submit] {
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #527881;
+  text-shadow: 0 1px #e3f1f1;
+  background: #cde5ef;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 16px;
+  outline: 0;
+  @include box-sizing(content-box); // Firefox sets this to border-box by default
+  @include linear-gradient(top, #edf5f8, #cde5ef);
+  @include box-shadow(inset 0 1px white, 0 1px 2px rgba(black, .15));
+
+  &:active {
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+    @include box-shadow(inset 0 0 3px rgba(black, .2));
+  }
+}
+#id_content{
+  margin: 5px;
+  padding: 0 10px;
+  width: 200px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px; // Can we get this on WebKit please?
+  @include box-shadow(inset 0 1px 3px rgba(black, .12));
+
+  &:focus {
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0; // WebKit sets this to -1 by default
+  }
+}
+
+.login_error {
+  color: red;
+  font-size: 10px:;
+}
+*/
